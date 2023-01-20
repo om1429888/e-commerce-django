@@ -37,7 +37,7 @@ class Account(AbstractBaseUser):
     last_name= models.CharField(max_length=50)
     username= models.CharField(max_length=50,unique=True)
     email= models.CharField(max_length=50,unique=True)
-    phone_number= models.CharField(max_length=50,unique=True)
+    phone_number= models.CharField(max_length=50)
     #required
     date_joined= models.DateTimeField(auto_now_add=True)
     last_login= models.DateTimeField(auto_now_add=True)
@@ -49,7 +49,7 @@ class Account(AbstractBaseUser):
     USERNAME_FIELD='email'
     REQUIRED_FIELDS=['username','first_name','last_name']
 
-    objsects=MyAccountManager()
+    objects=MyAccountManager()
     def __str__(self):
          return self.email
 
