@@ -1,5 +1,6 @@
 
-#E-commerce website built with Django
+#E-commerce website built with Django.
+
 This is an e-commerce website built using Django framework that offers a seamless shopping experience to the customers. The website is integrated with various features like order management, payment gateway integration with PayPal API, user management, and mailing system.
 
 Features
